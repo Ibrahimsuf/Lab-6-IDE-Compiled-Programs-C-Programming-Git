@@ -65,9 +65,6 @@ int** subtract_matrix(int** matrix1, int** matrix2, int size) {
 }
 
 void edit_matrix(int** matrix, int row, int column, int new_value, int size) {
-  std::cout << "The size is " << size << std::endl;
-  std::cout << "Size of matrix: " << sizeof(matrix) << std::endl;
-  std::cout << "Size of matrix[0]: " << sizeof(matrix[0]) << std::endl;
   if (row >= 0 && row < size && column >= 0 && column < size) {
     matrix[row][column] = new_value;
   }
